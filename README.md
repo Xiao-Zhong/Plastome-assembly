@@ -1,6 +1,8 @@
 # Plastome-assembly
-The pipeline can assemble a (near) complete plastome genome from short reads automatically. It condains both denovo and reference-based assembly, and is useful for large-scale chloroplast genome sequencing projects. For a single or few samples, please try NOVOPlasty, GetOrganelle or others.
+The pipeline can assemble a (near) complete plastome genome from short reads automatically. It firstly carries out denovo assembly and then reference-based assembly if denovo fails to achieve a complete and quality contig. It is useful for large-scale chloroplast genome sequencing projects. For a single or few samples, please try NOVOPlasty, GetOrganelle or others.
 
+# How ro run the pipeline
+```
 Usage:
     perl auto_assembly.pl [options] <samples_list> <reads_path>
 
@@ -19,5 +21,7 @@ Example:
     step j: statistics;
     step k: remove temporary files.
 #################################
+```
 
+# Note
 The workflow is lack of maintenance nowadays...
